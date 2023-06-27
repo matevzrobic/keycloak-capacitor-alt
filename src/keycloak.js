@@ -1350,7 +1350,7 @@ function Keycloak (config) {
         if (!type || type == 'default') {
             return {
                 login: function(options) {
-                    // window.location.assign(kc.createLoginUrl(options));
+                    window.location.assign(kc.createLoginUrl(options));
                     return createPromise().promise;
                 },
 
